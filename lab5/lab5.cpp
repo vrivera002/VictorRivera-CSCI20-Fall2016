@@ -1,13 +1,14 @@
 #include <iostream>
 using namespace std;
 
-struct monster {
+struct monster 
+{
         string head;
         string eyes;
         string ears;
         string nose;
         string mouth;
-    };
+};
 
 int main()
 {
@@ -46,11 +47,24 @@ int main()
          << ", " << monsterThree.nose << ", " << monsterThree.ears << ", "
          << monsterThree.mouth << endl;
     
-    monsterFour.head = "wackus";
-    monsterFour.eyes = "spritem";
-    monsterFour.nose = "wackus";
-    monsterFour.ears = "vegitas";
-    monsterFour.mouth = "Wackus";
+   
+    
+    cout << "enter your choice of monster head (zombus, spritem, wackus, vegitas), " 
+         <<"eyes, nose, ears, mouth" << ", please hit enter after each selection"
+         << endl;
+   
+    monsterFour.head;
+    monsterFour.eyes;
+    monsterFour.nose;
+    monsterFour.ears;
+    monsterFour.mouth;
+    
+    cin >> monsterFour.head;
+    cin >> monsterFour.eyes;
+    cin >> monsterFour.nose;
+    cin >> monsterFour.ears;
+    cin >> monsterFour.mouth;
+    
     cout << "monsterFour: " << monsterFour.head << ", " <<  monsterFour.eyes
          << ", " << monsterFour.nose << ", " << monsterFour.ears << ", "
          << monsterFour.mouth << endl;

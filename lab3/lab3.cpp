@@ -13,11 +13,12 @@ int main()
     int dime = 10; // 
     int quarter = 25;
     int input = 3459; // the amount of change that gets put into the coinstar
+    
     double origChange = input; // Used later after all of the coins have been calculated to get a dollar amount
     double dollar = .01;//multiplied with origChange to convert cents to dollars
     double fee = .001;//a fee taken by coinstar
    
-    double amountTaken = input * fee;
+    double amountTaken = input * fee;//fee taken from input
     origChange = origChange * dollar;
     cout << "You have inserted " << input << " cents into the coinstar!" << endl;
     cout << "that is " << origChange << " dollar(s)!" << endl;

@@ -59,6 +59,7 @@ void ATM :: SetTransferMoney (double transferAmount) {
 double ATM :: GetBankStatement () {
     cout << "You have " << AmountInAccount << " dollars in your account" <<endl;
 }
+
 int main() {
     ATM Account1;
     

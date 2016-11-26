@@ -12,7 +12,10 @@ int main()
     int nickel = 5; //represents the monatary value of a nickel
     int dime = 10; // 
     int quarter = 25;
-    int input = 3459; // the amount of change that gets put into the coinstar
+    int input; // the amount of change that gets put into the coinstar
+    
+    cout << "How many cents do you have?" << endl;
+    cin >> input;
     
     double origChange = input; // Used later after all of the coins have been calculated to get a dollar amount
     double dollar = .01;//multiplied with origChange to convert cents to dollars

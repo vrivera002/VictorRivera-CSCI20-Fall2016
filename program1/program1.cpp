@@ -1,5 +1,5 @@
 //victor rivera 9/14/16 
-// this program takes user inputed hours and wages and calculated the amount taken home 
+// this program takes user inputed hours and wages and calculates the amount taken home 
 #include <iostream>
 #include<iomanip>
 using namespace std;
@@ -18,7 +18,8 @@ int main()
     float tax = .17;//amount of tax assigned by the problem
     float amountDeducted;//subtracted from the inputed amount // calculated by grosspay*tax
     
-    person joeSmith;//just declaring the object
+    
+    person joeSmith;//declaring the objects
     joeSmith.wage;
     joeSmith.hours;
     
@@ -34,6 +35,8 @@ int main()
     jazzyKerber.wage;
     jazzyKerber.hours;
     
+    
+    //taking the hours worked and the hourly wage and calculating the taxes
     cout << "please input the hourly wage and hours worked for joe smith" << endl;
     cin >> joeSmith.wage;
     cin >> joeSmith.hours;

@@ -19,17 +19,21 @@ class TaxCalculator {
         double calculatedTax;//stores the calculated tax value and will be compared to withHeld to see if money is owed or if a refund is required
 };
 
+//taking in the clients name
 void TaxCalculator :: setName (string name) {
     clientNames = name;
 }
 
+//finding out if they are married or not
 void TaxCalculator :: setMaritalStatus (char yesNo) {
     married = yesNo;
 }
 
+//findong out gross wages
 void TaxCalculator :: setGrossWages (double amountEarned){
     wages = amountEarned;
 }
+
 
 void TaxCalculator :: setAmountWithHeld (double userInput) {
     WithHeld = userInput;
@@ -38,6 +42,7 @@ void TaxCalculator :: setAmountWithHeld (double userInput) {
 double TaxCalculator :: getGrossIncome () {
     AGI = wages;
     
+    //tax bracket for married individual
     if (married ==  'y') {
         
         AGI = AGI - 20000;
@@ -61,6 +66,7 @@ double TaxCalculator :: getGrossIncome () {
         } 
     }
     
+    //tax bracket for a non married person
     if (married == 'n') {
         
         AGI = AGI - 10000;

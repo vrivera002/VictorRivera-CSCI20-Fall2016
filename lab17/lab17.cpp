@@ -1,3 +1,4 @@
+//this program takes in some names, saves their name into a char array, then randomizes their name to give then possible user names
 #include <iostream>
 #include <cstring>
 using namespace std;
@@ -25,6 +26,7 @@ int main() {
         cout << "First Name entered is too long!" << endl;
         return 0;
     }
+    
     
     
     //getting the last name input and making sure it is appropriate

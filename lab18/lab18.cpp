@@ -1,3 +1,4 @@
+
 //this program takes in some names, saves their name into a char array, then randomizes their name to give then possible user names
 #include <iostream>
 #include <string>
